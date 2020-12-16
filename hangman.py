@@ -24,7 +24,7 @@ def hangman():
 
         # what current word is
         word_list = [letter if letter in used_letters else '-' for letter in word]
-        print('Current word: ', ' '.join(word_list))
+        print('Текущее слово: ', ' '.join(word_list))
 
         user_letter = input('Угадайте букву: ').upper()
         if user_letter in alphabet - used_letters:
